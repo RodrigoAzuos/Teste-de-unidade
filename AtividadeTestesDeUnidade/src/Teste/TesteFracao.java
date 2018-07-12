@@ -1,10 +1,17 @@
 package Teste;
 
 import Model.Fracao;
+import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class TesteFracao {
+
+    @Test(expected = ValueException.class)
+    public void Testar_construtor_de_uma_fracao(){
+        Fracao fracao =  new Fracao(5,0);
+
+    }
 
     @Test
     public void Testar_se_uma_fracao_multiplica_corretamente(){
