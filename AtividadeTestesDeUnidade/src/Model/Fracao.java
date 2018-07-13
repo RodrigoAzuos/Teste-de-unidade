@@ -41,11 +41,12 @@ public class Fracao {
     }
 
     public float reduzida(){
+        //Todo fazer a simplificação de uma fração.
         return 0;
     }
 
-    public float aparente(){
-        return 0;
+    public boolean aparente(){
+        return (this.numerador % this.denominador == 0 )? true : false;
     }
 
     public float valorReal(){
