@@ -50,6 +50,6 @@ public class TesteFracao {
     @Test
     public void Testar_se_mmc_eh_valido(){
         Fracao fracao =  new Fracao(10,5);
-        Assert.assertEquals("15.0", String.valueOf(fracao.mmc(3,5)));
+        Assert.assertEquals("20.0", String.valueOf(fracao.mmc(10,4)));
     }
 }

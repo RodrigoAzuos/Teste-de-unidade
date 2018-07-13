@@ -24,10 +24,7 @@ public class Fracao {
     }
 
     public String divisao(Fracao fracao){
-        int numeradorTemporario = fracao.numerador;
-        fracao.numerador = fracao.denominador;
-        fracao.denominador = numeradorTemporario;
-        return this.multiplicacao(fracao);
+        return this.multiplicacao(new Fracao(fracao.denominador, fracao.numerador));
     }
 
     public String soma(Fracao fracao){
